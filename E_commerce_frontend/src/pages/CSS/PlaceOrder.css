@@ -1,0 +1,71 @@
+.placeorder-main{
+    width: 100vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+
+justify-content: center;
+align-items: center;
+
+}
+.placeorder-main h1{
+        color: #d99765;
+        margin-top: 5vh;
+        font: 3rem poppins;
+
+}
+.placeorder-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ margin: 3vh;
+ height: 80vh;
+ width: 80vw;
+
+ border-radius:25px;
+ background-color: #000000bc;
+}
+.placeorder-left input{
+    height: 10vh;
+    width: 35vw;
+    margin:2vh auto;
+    border-radius: 15px;
+  background-color:#f4f1ea;
+    font-size: 1.5rem;
+    text-align: center; 
+}
+input::placeholder{
+    color: #000;
+}
+.placeorder-right{
+    width: 80vw;
+    margin: auto;
+    height: 60vh;
+}
+@media (max-width:800px) {
+    .placeorder-main h1{
+        font-size: 2rem;
+    }
+    .placeorder-left{
+        height: 70vh;
+    }
+    .placeorder-left input{
+        height: 7vh;
+        margin:auto;
+    }
+}
+@media (max-width:500px) {
+    .placeorder-main h1{
+        font-size: 1.5rem;
+    }
+    .placeorder-left{
+        height: 50vh;
+    }
+    .placeorder-left input{
+        font-size: 1rem;
+        height: 5vh;
+    }
+    .placeorder-right .cartTotal{
+        margin-top: 1vh;
+    }
+    
+}

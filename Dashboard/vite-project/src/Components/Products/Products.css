@@ -1,0 +1,116 @@
+.products{
+  width: 85vw;
+  display: flex;
+height: 100vh;
+overflow: scroll;
+flex-direction: column;
+align-items: center;
+background: linear-gradient(140deg,#dcf6f78e, #a4c2f5a1);
+}
+.products h1{
+    font-size: 3rem;
+    margin: 1vw auto;
+    color: #35095fc7;
+}
+.products .banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80vw;
+
+}
+.products .banner .card{
+    width: 19vw;
+      background: linear-gradient(100deg, rgba(214, 236, 254, 0.577), #dbc6fea1);
+    border: 1px solid rgba(101, 101, 247, 0.304);
+    height: 50vh;
+    margin: 3vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 15px;
+
+}
+.products .banner .card .head{
+    margin: auto;
+}
+.products .banner .card .head img{
+    height: 24vh;
+    width: 17vw;
+}
+.products .banner .card .card-details{
+    margin: auto;
+    width: 18vw;
+
+}
+.products .banner .card .card-details p{
+font-size: 1.1rem;
+}
+
+.products .banner .card .card-details .em{
+    word-wrap:break-word;
+    text-overflow: clip; 
+    display: flex;
+    flex-direction: row;
+}
+.products .banner .card .card-details .em span{
+    width: 14vw;
+}
+@media (max-width:1024px) {
+    .products .banner {
+        grid-template-columns: 1fr 1fr;
+      
+    }
+    .products .banner .card {
+        width: 35vw;
+        height: 45vh;
+       
+    }
+    .products .banner .card .head img {
+   
+        width: 28vw;
+    }
+    .products .banner .card .head h2{
+        font-size: 3vw;
+    }
+    .products .banner .card .card-details {
+  
+        width: 28vw;
+    }
+    .products .banner .card .card-details p{
+        font-size: 1.8vw;
+    }
+}
+@media (max-width:800px) {
+    .products .banner .card .card-details p{
+        font-size: 2vw;
+    }
+}
+@media (max-width:500px) {
+    .products .banner {
+        grid-template-columns: 1fr ;
+      
+    }
+    .products .banner .card .card-details p{
+        font-size: 2vw;
+    }
+    .products .banner .card {
+        width: 60vw;
+        height: 40vh;
+       
+    }
+    .products .banner .card .head img {
+   
+        width: 50vw;
+    }
+    .products .banner .card .head h2{
+        font-size: 4vw;
+    }
+    .products .banner .card .card-details {
+  
+        width: 50vw;
+    }
+    .products .banner .card .card-details p{
+        font-size: 2.5vw;
+    }
+}

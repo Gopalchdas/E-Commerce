@@ -1,0 +1,119 @@
+.login-signup {
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(200deg, #CED4DA, #ffffff 40%);
+    
+}
+
+.login-container {
+    width: 35vw;
+    height: 75vh;
+    background: linear-gradient(180deg, #ffffff, #E9ECEF 20%);
+    margin-top: 18vh;
+    border-radius: 5%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-top: 5vh;
+    font-size: 3rem;
+    color: rgba(97, 56, 3, 0.606);
+}
+
+.login-container .input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6vh 0vw;
+    gap: 5vh;
+}
+
+.input-field input {
+    height: 7vh;
+    width: 24vw;
+    border: 2px solid;
+    border-radius: 2vh;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: hsla(206, 6%, 52%, 0.774);
+    color: black;
+    outline: none;
+    border: 1px solid black;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.login-container button {
+    height: 6vh;
+    width: 15vw;
+    border-radius: 3vh;
+    border: none;
+    background-color: #212529;
+    font-size: 1.3rem;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.login-container button:active {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.login-container p {
+    margin-bottom: 2vh;
+    color: rgb(97, 56, 3);
+    font-size: 1.1rem;
+}
+@media (max-width:1280px) {
+    .login-container {
+        width: 45vw;
+        height: 75vh;}
+        .input-field input {
+            width: 34vw;
+        }
+}
+@media (max-width:1040px) {
+    .login-container {
+        width: 55vw;
+        height: 75vh;}
+        .login-container button {
+            margin-top: 4vh;
+        }
+        .login-container p{
+            font-size: 2.5vw;
+        }
+        
+}
+@media (max-width:800px) {
+    .login-container {
+        width: 70vw;
+        height: 75vh;}
+        .input-field input {
+            width: 44vw;
+        }
+        .login-container button {
+            margin-top: 4vh;
+            width: 25vw;
+        }
+}
+@media (max-width:500px) {
+    .login-container {
+        width: 80vw;
+        height: 75vh;
+    border-radius: 10vw;}
+
+        .input-field input {
+            width: 60vw;
+        }
+        .login-container p {
+            font-size: 4vw;
+        }
+
+}
